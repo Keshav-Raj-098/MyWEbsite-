@@ -1,0 +1,72 @@
+body{
+
+    
+    background-color:rgb(29, 28, 28);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+th {
+    border: 0.5px solid  rgb(34, 224, 17);;
+    color:rgb(0, 255, 229);
+    padding:6px;
+}
+td {
+     border: 0.5px solid  rgb(34, 224, 17);;
+    
+    background-color:palegoldenrod;
+    color:black;    
+    
+}
+@keyframes fadeout {
+
+ from {opacity:1;} to {opacity:0;}
+
+}
+h2 { animation: fadeout 15s infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;}
+
+@keyframes fadeout1 {
+
+    0% {opacity:0;} 35% {opacity:1;}
+   
+   }  
+   @keyframes fadeout2 {
+
+     0% {opacity:0;} 15% {opacity:0;}  55% {opacity:1;}
+   
+   }  
+   
+   h3 { animation: fadeout1 2s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+   table {  animation: fadeout2 2s ease; }
+
+   @keyframes gradient {
+    0%{
+        background-position: 0% 75%;
+    }
+    50%{
+        background-position: 100% 30%;
+    }
+    100%{
+        background-position: 0% 70%;
+    }
+}
+   
+   #n{
+    background: linear-gradient(to right,#fe015a 35%,rgb(36, 160, 227));
+    background-size:200% auto;
+    background-clip:text;
+    color:transparent;
+    animation:gradient 3s linear infinite;
+    
+}
